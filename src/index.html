@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task-App</title>
+    <link rel="stylesheet" href="style.css" >
+  <!-- <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" > -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <div class="container" id="welcome"></div>
+     <div class="contenedor-principal">
+          <div class="card">
+    
+             <form id="formTask" class="form">
+              <h1 style="padding: 10px; text-decoration-line: underline;">Nueva Tarea</h1>
+                <div class="contenedor">
+                  <input type="text" id="title" placeholder="Titulo " autofocus>
+                </div>
+                
+                <div class="dia">
+                 <label>Fecha: </label>
+                 <input type="date" id="fecha"  required />
+                 <label for="hora">Hora: </label>
+                 <input type="time" id="hora" required>
+                </div>
+
+                <div class="contenedorTex">
+                  <textarea id="description" cols="30" rows="10"  placeholder="Descripción"></textarea>
+                </div>
+                <button type="submit" class="btnGuardar" id="submitButton">Guardar</button>
+
+              </form>
+          </div>
+
+        <div class="lista_de_tareas">
+          <div class=" task"id="tasks"></div>
+         </div>
+      </div>
+    </div>   
+    <script src="./app.js"></script>
+  </body>
+</html>

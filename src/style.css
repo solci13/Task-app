@@ -1,0 +1,142 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: bisque;
+   background-image:url(img.png);
+}
+.container{
+   font-size: 40px;
+   background-color: #000000;
+   font-family: serif;
+   color: white;
+   text-align: center;
+   padding: 15px;
+}
+
+.card{
+   margin: 25px auto auto 30px;
+   width: 40%;
+   border-radius: 10px;
+   box-shadow: 5px 9px 30px 14px #110931;
+   
+}
+.form{
+   padding: 10px;
+ 
+}
+.dia{
+   padding-left: 10px;
+   display: flex;
+   justify-content: space-around;
+   font-size: 20px;
+
+}
+.dia input{
+   border-radius: 8px;
+   width: 30%;
+   box-shadow: 6px 0px 12px 4px white;
+   background-color: #797171;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+}
+
+.contenedor{
+   width: 100%;
+   display: flex;
+   padding: 20px;
+   margin: auto;
+  justify-content:space-between;
+}
+
+
+.contenedor input[type="text"]{
+   padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 280px;
+}
+textarea{
+   border-radius: 10px;
+   padding: 10px;
+   margin: 20px;
+   font-size: 20px;
+   width: 90%;
+
+}
+
+button{
+   padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color:black;
+  border: 1px solid white;
+  color: white;
+  margin: 10px;
+}
+
+
+
+.lista_de_tareas{
+   text-transform: capitalize;
+   border-radius: 10px;
+   padding: 20px;
+   position: absolute;
+   top: 15%;
+   right: 4%;
+   width: 40%;;
+    box-shadow: 9px 26px 23px 4px #607D8B;
+ }
+
+   p{
+      font-size: 25px;
+   }
+
+
+ .card-body{
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 10px;
+ }
+
+ 
+/* .card-body:hover {
+   background-color: #797979;
+ } */
+ .titulo-tarea{
+  color:black; 
+  font-weight:bold;
+  text-align:center;
+   display:block;
+   text-decoration: underline;
+ }
+ 
+ 
+ /* Fondo para tareas hechas */
+ .tarea-hecha-bg {
+   background-color: #e0e0e0;
+   border: 5px solid #9E9E9E;
+ }
+
+ /* Fondo para tareas pendientes */
+ .tarea-pendiente-bg {
+   background-color:#999a9d;
+   border-left: 5px solid #352d20;
+ }
+
+ /* Título para tarea hecha */
+ .tarea-hecha {
+   text-decoration: line-through;
+   color: gray;
+   opacity: 0.7;
+ }
+
+ /* Título para tarea pendiente */
+ .tarea-pendiente {
+   color: black;
+ }
