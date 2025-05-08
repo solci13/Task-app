@@ -89,7 +89,6 @@ button{
    top: 15%;
    right: 4%;
    width: 40%;;
-    box-shadow: 9px 26px 23px 4px #607D8B;
  }
 
    p{
@@ -104,10 +103,6 @@ button{
    margin: 10px;
  }
 
- 
-/* .card-body:hover {
-   background-color: #797979;
- } */
  .titulo-tarea{
   color:black; 
   font-weight:bold;

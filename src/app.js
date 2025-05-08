@@ -68,7 +68,7 @@ function editTask(index) {
 
   document.getElementById('submitButton').textContent = 'Actualizar';
 }
-//funcion tareas hechas 
+//funcion tareas hechas
 function toggleDone(index) {
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   tasks[index].done = !tasks[index].done;
@@ -79,6 +79,11 @@ function toggleDone(index) {
 function getTasks() {
   const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const tasksView = document.getElementById('tasks');
+
+  if (tasks.length === 0) {
+    tasksView.innerHTML = ''; // No mostramos nada si no hay tareas
+    return;
+  }
 
   tasksView.innerHTML = `
     <h1>Mis Tareas</h1>
